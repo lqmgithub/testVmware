@@ -41,7 +41,7 @@ def buildList(result):
 
 result = session.invoke_api(vim_util, "get_objects", session.vim,
                                   #"VirtualMachine",1, ['guest','summary','config.hardware.numCoresPerSocket','config.hardware.numCPU','config.hardware.memoryMB'])
-                                  "VirtualMachine",1, ['name','config.hardware.numCoresPerSocket','config.hardware.numCPU','config.hardware.memoryMB'],)
+                                  "VirtualMachine",1, ['name','config.hardware.numCoresPerSocket','config.hardware.numCPU','config.hardware.memoryMB','runtime.powerState'],)
 
 
 while result:
