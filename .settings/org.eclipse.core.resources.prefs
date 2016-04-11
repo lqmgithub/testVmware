@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//src/test/testCN.py=utf-8
+encoding//src/test/testListVm.py=utf-8
+encoding//src/test/testModifyVm.py=utf-8
+encoding//src/test/testVmAttr.py=utf-8
+encoding//src/test/testVmGetJsonAttr.py=utf-8
