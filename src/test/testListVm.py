@@ -4,7 +4,7 @@ from oslo_vmware import vim_util
 
 # Get a handle to a vSphere API session
 session = api.VMwareAPISession(
-    '192.168.103.110',      # vSphere host endpoint
+    '192.168.103.201',      # vSphere host endpoint
     'root', # vSphere username
     'root123',      # vSphere password
     10,              # Number of retries for connection failures in tasks
@@ -50,7 +50,10 @@ while result:
 # buildList(result)
 
    result = session.invoke_api(vim_util, "continue_retrieval", session.vim,result)
+session.logout();
 print "done"
+
+
 #buildList(result2)
 #print str(vmlist).decode('utf-8').encode('utf-8')
 
